@@ -1,0 +1,11 @@
+mongo:
+  build: ./mongo
+  links:
+    - redis
+  ports:
+    - "27017:27017"
+
+redis:
+  build: ./redis
+  ports:
+    - "6379:6379"
